@@ -17,17 +17,6 @@ const Projects = () => {
       impact: '200+ Farmers Connected'
     },
     {
-      title: 'WhatsApp Clone Chat App',
-      description: 'Feature-rich messaging application with real-time chat, audio/video calls, file sharing, and modern UI animations.',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop',
-      tags: ['Flutter', 'Firebase', 'Zegocloud', 'Pusher', 'Google Auth'],
-      features: ['Real-time messaging', 'Video/Audio calls', 'File sharing', 'Google authentication'],
-      status: 'Completed',
-      github: '#',
-      demo: '#',
-      impact: 'Full WhatsApp Features'
-    },
-    {
       title: 'Flutter Music Player',
       description: 'Beautiful music player with local playback, album creation, metadata extraction, and smooth animations.',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop',

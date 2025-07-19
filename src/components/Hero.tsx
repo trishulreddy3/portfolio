@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail, Download, Code, Sparkles } from 'lucide-react';
 import profileHero from '@/assets/profile-hero.jpg';
+import codingWorkspace from '@/assets/coding-workspace.jpg';
+import geometricAnimation from '@/assets/geometric-animation.jpg';
+import aiNetwork from '@/assets/ai-network.jpg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -35,12 +38,20 @@ const Hero = () => {
 
   return (
     <section className="hero-gradient min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      {/* Floating elements */}
+      {/* Floating elements with animated images */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-4 h-4 bg-primary rounded-full opacity-30 float-animation"></div>
-        <div className="absolute top-40 right-20 w-6 h-6 bg-accent rounded-full opacity-20 float-animation" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-40 left-20 w-3 h-3 bg-tech-blue rounded-full opacity-40 float-animation" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute bottom-20 right-10 w-5 h-5 bg-tech-purple rounded-full opacity-25 float-animation" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-10 w-32 h-24 rounded-lg overflow-hidden opacity-20 animate-float">
+          <img src={codingWorkspace} alt="" className="w-full h-full object-cover" />
+        </div>
+        <div className="absolute top-40 right-20 w-28 h-28 rounded-full overflow-hidden opacity-30 animate-pulse delay-1000">
+          <img src={geometricAnimation} alt="" className="w-full h-full object-cover" />
+        </div>
+        <div className="absolute bottom-20 left-20 w-36 h-24 rounded-lg overflow-hidden opacity-25 animate-bounce-slow">
+          <img src={aiNetwork} alt="" className="w-full h-full object-cover" />
+        </div>
+        <div className="absolute top-1/2 left-1/4 w-4 h-4 bg-primary rounded-full opacity-30 float-animation"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-6 h-6 bg-accent rounded-full opacity-20 float-animation" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-tech-blue rounded-full opacity-40 float-animation" style={{ animationDelay: '4s' }}></div>
       </div>
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
