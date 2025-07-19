@@ -361,11 +361,24 @@
     border: 1px solid hsl(var(--border));
     border-radius: var(--radius);
     transition: var(--transition-smooth);
+    padding: 0.75rem 1rem;
+    color: hsl(var(--foreground));
+    position: relative;
+    z-index: 10;
   }
 
   .form-input:focus {
     border-color: hsl(var(--primary));
     box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
     outline: none;
+    background: hsl(var(--background));
+  }
+
+  .form-input:hover {
+    border-color: hsl(var(--primary) / 0.5);
+  }
+
+  .form-input::placeholder {
+    color: hsl(var(--muted-foreground));
   }
 }

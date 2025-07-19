@@ -201,14 +201,14 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-2 fade-in-up animate" style={{ animationDelay: '0.4s' }}>
-            <Card className="animated-border">
+            <Card className="animated-border relative z-20">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3">
                   <Send className="h-6 w-6 text-primary" />
                   Send me a message
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-30">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
@@ -221,8 +221,9 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="form-input"
+                        className="w-full h-12 px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 relative z-40"
                         placeholder="Your full name"
+                        autoComplete="name"
                       />
                     </div>
                     <div>
@@ -236,8 +237,9 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="form-input"
+                        className="w-full h-12 px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 relative z-40"
                         placeholder="your.email@example.com"
+                        autoComplete="email"
                       />
                     </div>
                   </div>
@@ -252,8 +254,9 @@ const Contact = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="form-input"
+                        className="w-full h-12 px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 relative z-40"
                         placeholder="Your company (optional)"
+                        autoComplete="organization"
                       />
                     </div>
                     <div>
@@ -265,8 +268,9 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="form-input"
+                        className="w-full h-12 px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 relative z-40"
                         placeholder="Your phone number (optional)"
+                        autoComplete="tel"
                       />
                     </div>
                   </div>
@@ -281,7 +285,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="form-input"
+                      className="w-full h-12 px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 relative z-40"
                       placeholder="What's this about?"
                     />
                   </div>
@@ -297,14 +301,14 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="form-input resize-none"
+                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 resize-none relative z-40"
                       placeholder="Tell me about your project, idea, or just say hello!"
                     />
                   </div>
 
                   <Button 
                     type="submit" 
-                    className="btn-hero w-full py-6 text-lg"
+                    className="btn-hero w-full py-6 text-lg relative z-40"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
