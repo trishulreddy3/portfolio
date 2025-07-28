@@ -99,7 +99,7 @@ const Contact = () => {
     {
       name: 'GitHub',
       icon: <Github className="h-6 w-6" />,
-      url: 'https://github.com/gannaramtrishulreddy',
+      url: 'https://github.com/trishulreddy3',
       color: 'hover:text-tech-purple'
     },
     {
