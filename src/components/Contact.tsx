@@ -105,7 +105,7 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: <Linkedin className="h-6 w-6" />,
-      url: 'https://www.linkedin.com/in/gannaramtrishul-reddy-393439274',
+      url: 'https://www.linkedin.com/in/gannaramtrishul-reddy-393439274/',
       color: 'hover:text-tech-blue'
     },
     {

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Code, Instagram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -8,20 +8,26 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: <Github className="h-5 w-5" />,
-      url: 'https://github.com/gannaramtrishulreddy',
+      url: 'https://github.com/trishulreddy3',
       color: 'hover:text-tech-purple'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
-      url: 'https://linkedin.com/in/gannaram-trishul-reddy',
+      url: 'https://www.linkedin.com/in/gannaramtrishul-reddy-393439274/',
       color: 'hover:text-tech-blue'
+    },
+    {
+      name: 'Instagram',
+      icon: <Instagram className="h-5 w-5" />,
+      url: 'https://www.instagram.com/trishulreddi3/',
+      color: 'hover:text-accent'
     },
     {
       name: 'Email',
       icon: <Mail className="h-5 w-5" />,
       url: 'mailto:gannaramtrishulreddy@gmail.com',
-      color: 'hover:text-accent'
+      color: 'hover:text-tech-green'
     }
   ];
 
