@@ -9,25 +9,25 @@ const Footer = () => {
       name: 'GitHub',
       icon: <Github className="h-5 w-5" />,
       url: 'https://github.com/trishulreddy3',
-      color: 'hover:text-tech-purple'
+      color: 'hover:text-foreground'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
       url: 'https://www.linkedin.com/in/gannaramtrishul-reddy-393439274/',
-      color: 'hover:text-tech-blue'
+      color: 'hover:text-foreground'
     },
     {
       name: 'Instagram',
       icon: <Instagram className="h-5 w-5" />,
       url: 'https://www.instagram.com/trishulreddi3/',
-      color: 'hover:text-accent'
+      color: 'hover:text-foreground'
     },
     {
       name: 'Email',
       icon: <Mail className="h-5 w-5" />,
       url: 'mailto:gannaramtrishulreddy@gmail.com',
-      color: 'hover:text-tech-green'
+      color: 'hover:text-foreground'
     }
   ];
 

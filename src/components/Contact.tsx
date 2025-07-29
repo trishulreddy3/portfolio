@@ -15,6 +15,7 @@ import {
   MessageCircle, 
   Github, 
   Linkedin,
+  Instagram,
   ExternalLink
 } from 'lucide-react';
 
@@ -100,19 +101,25 @@ const Contact = () => {
       name: 'GitHub',
       icon: <Github className="h-6 w-6" />,
       url: 'https://github.com/trishulreddy3',
-      color: 'hover:text-tech-purple'
+      color: 'hover:text-foreground'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="h-6 w-6" />,
       url: 'https://www.linkedin.com/in/gannaramtrishul-reddy-393439274/',
-      color: 'hover:text-tech-blue'
+      color: 'hover:text-foreground'
+    },
+    {
+      name: 'Instagram',
+      icon: <Instagram className="h-6 w-6" />,
+      url: 'https://www.instagram.com/trishulreddi3/',
+      color: 'hover:text-foreground'
     },
     {
       name: 'Email',
       icon: <Mail className="h-6 w-6" />,
       url: 'mailto:gannaramtrishulreddy@gmail.com',
-      color: 'hover:text-accent'
+      color: 'hover:text-foreground'
     }
   ];
 
